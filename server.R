@@ -32,7 +32,7 @@ shinyServer(
                         dat <- aggregate(data = dat, TotalBirth ~ Year + Name, sum)
                         total <- subset(dat, Year == input$year, select = c('Year','TotalBirth'))
                   }
-                  paste(total$TotalBirth, toupper(input$name), 'was born in', input$year, sep = " ")})
+                  paste(total$TotalBirth, toupper(input$name), 's were born in', input$year, sep = " ")})
             output$stat <- renderChart({
                   uData <- userData(toupper(input$name))
                   if (nrow(uData) > 0) {

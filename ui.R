@@ -6,8 +6,6 @@ getYears <- function() {
       ys
 }
 
-#h3('X' + verbatimTextOutput("name") + 'was born in XX'),
-
 require(rCharts)
 shinyUI(
       pageWithSidebar(
@@ -24,7 +22,10 @@ shinyUI(
                             along 50 years'),
                   helpText('Note: This app is about people born between 1960 and 2010 in Montevideo Uruguay, 
                               mostly of their names are spanish names like Carlos and Julieta.'),
-                  h3(textOutput('result')),
+                  helpText('Note For the graders: I intended to use NVD3 graphics but it seems ther is a bug
+                           when changing the tab and get back to the first tab the graphic cuts off
+                           couldnt solve it... you need to refresh the app from the browser.'),
+                  h3(verbatimTextOutput("result")),
                   tabsetPanel(
                         tabPanel(textOutput('tab1'), showOutput("stat", "nvd3")), 
                         tabPanel(textOutput('tab2'), showOutput("pieMale", "nvd3")), 
