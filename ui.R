@@ -17,7 +17,7 @@ shinyUI(
                   submitButton('Next')
             ),
             mainPanel(
-                  helpText('For example put your name and your birth year on your left 
+                  h3('Put your name and your birth year on your left 
                             and you would see the evolution of the popularity of your name 
                             along 50 years'),
                   helpText('Note: This app is about people born between 1960 and 2010 in Montevideo Uruguay, 
