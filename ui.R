@@ -21,7 +21,10 @@ shinyUI(
                             and you would see the evolution of the popularity of your name 
                             along 50 years'),
                   helpText('Note: This app is about people born between 1960 and 2010 in Montevideo Uruguay, 
-                              mostly of their names are spanish names like Carlos and Julieta.'),
+                              mostly of their names are spanish names like Carlos and Julieta.
+                           I use the open data from the Goverment Montevideo - Uruguay 
+                           municipality you can download the data from: '),
+                  a(href="https://catalogodatos.gub.uy/dataset/partidas-de-registro-civil-de-montevideo", "Partidas-de-registro-civil-de-montevideo"),
                   helpText('Note For the graders: I intended to use NVD3 graphics but it seems ther is a bug
                            when changing the tab and get back to the first tab the graphic cuts off
                            couldnt solve it... you need to refresh the app from the browser.'),
